@@ -1,7 +1,4 @@
-
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class BasicDesignScreen extends StatelessWidget {
    
@@ -9,7 +6,7 @@ class BasicDesignScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    final String texto = 'Los gatos domésticos son cazadores natos, capaces de acechar a sus presas y abalanzarse sobre ellas con sus garras y dientes. Son particularmente eficaces de noche, cuando sus ojos reflectantes les dotan de una visión mucho más nítida que la de sus víctimas.'; 
+    const String texto = 'Los gatos domésticos son cazadores natos, capaces de acechar a sus presas y abalanzarse sobre ellas con sus garras y dientes. Son particularmente eficaces de noche, cuando sus ojos reflectantes les dotan de una visión mucho más nítida que la de sus víctimas.'; 
     return Scaffold(
       body: Column(
         children: [
@@ -25,7 +22,7 @@ class BasicDesignScreen extends StatelessWidget {
           // Descripcion
           Container(
             margin: const EdgeInsets.symmetric( horizontal: 20, vertical: 20, ),
-            child: Text(texto, textAlign: TextAlign.justify, style: const TextStyle(fontSize: 20) )
+            child: const Text(texto, textAlign: TextAlign.justify, style: TextStyle(fontSize: 20) )
           ),
           
           Container(
@@ -69,7 +66,7 @@ class Title extends StatelessWidget {
           Expanded(child: Container()),
 
           const Icon(Icons.pets_outlined, color: Colors.pinkAccent, size: 30,),
-          const Text ('11'),
+          // const Text ('11'),
         ],
       ),
     );
