@@ -29,16 +29,23 @@ class MainContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: const [
-        Text('Hola Lis'),
-        Text('Hola Lis'),
-        Text('Hola Lis'),
-        Text('Hola Lis'),
-      ],
 
+    final textStyle = TextStyle( fontSize: 40, fontWeight: FontWeight.w400, color: Colors.white );
+    
+    return SafeArea(
+      bottom: false,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          SizedBox( height: 30 ),
+          Text('11°', style: textStyle),
+          Text('Miercoles', style: textStyle,),
+          Expanded(child: Container()),
+     
+          Icon( Icons.keyboard_arrow_down, size: 100, color: Colors.white,)
+        ],
+      ),
     );
   }
 }
