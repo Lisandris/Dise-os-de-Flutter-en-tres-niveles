@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,    // elimina barrita roja de la derecha
       title: 'Material App',
+      theme: ThemeData.dark(),
       initialRoute: 'home_screen',
       routes: {
         'basic_design' : ( _ ) => const BasicDesignScreen(),
